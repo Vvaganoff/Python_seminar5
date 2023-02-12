@@ -8,7 +8,9 @@ def summa(n, a):
     # print(f'вызываем функцию, n = {n}, a = {a}')
 
     if a == 0:
-        if n == 1:
+        if n == 0:
+            return 0
+        elif n == 1:
             res = 1
             return res
         res = summa(n - 1, 0) + 1
